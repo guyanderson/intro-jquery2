@@ -1,24 +1,13 @@
 $(document).ready(function() {
+  $("#formOne").submit(function(event) {
+    event.preventDefault();
 
-  var tags = ["h1", "p", "img"];
-  tags.forEach(function(tag) {
-    $("h1").click(function() {
-      alert("This is a <" + tag + ">.");
-      // alert();
+    var iceCreams = ["flavorOne", "flavorTwo", "flavorThree", "flavorFour"];
+    iceCreams.forEach(function(iceCream) {
+      var userInput = $("input#" + iceCream).val();
+      $("ul").append("<li>" + userInput + "</li>");
     });
+
   });
 
-
-
-  // $("h1").click(function() {
-  //   alert("This is a header.");
-  // });
-  //
-  // $("p").click(function() {
-  //   alert("This is a paragraph.");
-  // });
-  //
-  // $("img").click(function() {
-  //   alert("This is an image.");
-  // });
 });

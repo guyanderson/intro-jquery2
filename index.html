@@ -8,13 +8,27 @@
   </head>
   <body>
     <div class="container">
-      <h1>HTML help</h1>
-
-      <p>This is a very special page. If you click somewhere, it will tell you what type of HTML element you clicked on.</p>
-
-      <p>Look at this cute walrus!</p>
-      <img src="img/walrus.jpg">
+      <form id="formOne" action="index.html" method="post">
+        <div class="form-group">
+          <label for="flavorOne">Enter a flavor.</label>
+          <input id="flavorOne" type="text" class="form-control" name="iceCream">
+        </div>
+        <div class="form-group">
+          <label for="flavorTwo">Enter a flavor.</label>
+          <input id="flavorTwo" type="text" class="form-control" name="iceCream">
+        </div>
+        <div class="form-group">
+          <label for="flavorThree">Enter a flavor.</label>
+          <input id="flavorThree" type="text" class="form-control" name="iceCream">
+        </div>
+        <div class="form-group">
+          <label for="flavorFour">Enter a flavor.</label>
+          <input id="flavorFour" type="text" class="form-control" name="iceCream">
+        </div>
+        <button type="submit" name="button">Click!</button>
+      </form>
+      <ul>
+      </ul>
     </div>
-
   </body>
 </html>
